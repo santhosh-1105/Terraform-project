@@ -6,6 +6,7 @@ key_name = "santhosh1"
 vpc_security_group_ids = [aws_security_group.demosg.id]
 subnet_id = aws_subnet.my-pub-sub.id
 associate_public_ip_address = true
+ user_data = "${file("data.sh")}"
 
 
     tags = {
@@ -21,6 +22,7 @@ key_name = "santhosh1"
 vpc_security_group_ids = [aws_security_group.demosg.id]
 subnet_id = aws_subnet.my-pub.id
 associate_public_ip_address = true
+user_data = "${file("data.sh")}"
 
 
     tags = {
