@@ -16,3 +16,13 @@ resource "aws_route_table_association" "rt22" {
   subnet_id      = aws_subnet.public-subnet-1.id
   route_table_id = aws_route_table.route.id
 }
+
+resource "aws_route_table_association" "rt33" {
+  subnet_id      = aws_subnet.my -pub-sub.id
+  route_table_id = aws_route_table.route.id
+}
+
+resource "aws_route_table_association" "rt11" {
+  subnet_id      = aws_subnet.my-pub.id
+  route_table_id = aws_route_table.route.id
+}
