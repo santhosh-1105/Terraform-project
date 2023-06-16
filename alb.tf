@@ -30,10 +30,10 @@ resource "aws_lb_listener" "external-elb" {
   port              = "80"
   protocol          = "HTTP"
   default_action {
-    type             = "forward"
+   type             = "forward"
     target_group_arn = aws_lb_target_group.target-elb.arn
-    port = 80
   health_check {
+    port = 80
     healthy_threshold = 3
     unhealthy_threshold = 2
     timeout = 2
