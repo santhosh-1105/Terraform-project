@@ -1,5 +1,5 @@
 resource "aws_db_subnet_group" "my-database" {
-  name       = "social"
+  name       = "mini"
   subnet_ids = [aws_subnet.database-subnet-1.id, aws_subnet.database-subnet-2.id]
   tags = {
     Name = "my-DB-subnet"
