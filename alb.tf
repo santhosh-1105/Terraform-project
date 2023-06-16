@@ -40,6 +40,6 @@ resource "aws_lb_listener" "external-elb" {
     timeout = 2
     interval = 5
     matcher = "200"  # has to be HTTP 200 or fails
-  
+    }
   }
 }
