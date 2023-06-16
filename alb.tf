@@ -35,9 +35,5 @@ resource "aws_lb_listener" "external-elb" {
     port = 80
     healthy_threshold = 3
     unhealthy_threshold = 2
-    timeout = 2
-    interval = 5
-    matcher = "200"  # has to be HTTP 200 or fails
-    
   }
 }
