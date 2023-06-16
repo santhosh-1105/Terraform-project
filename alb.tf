@@ -32,14 +32,12 @@ resource "aws_lb_listener" "external-elb" {
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.target-elb.arn
-    health_check {
-    path = "/api/1/resolve/default?path=/service/my-service"
     port = 80
     healthy_threshold = 3
     unhealthy_threshold = 2
     timeout = 2
     interval = 5
     matcher = "200"  # has to be HTTP 200 or fails
-    }
+    
   }
 }
