@@ -8,6 +8,7 @@ resource "aws_lb" "external-alb" {
 resource "aws_lb_target_group" "target-elb" {
   name     = "ALB-TargetGroup"
   protocol = "HTTP"
+  port     = 80
   vpc_id   = aws_vpc.my-vpc.id
 }
 resource "aws_lb_target_group_attachment" "attachment" {
