@@ -2,6 +2,7 @@
 sudo yum -y upgrade
 sudo yum -y install git
 git clone https://github.com/santhosh-1105/car-prediction.git
+cd /
 cd car-prediction/ 
 sudo yum -y install python3
 sudo yum -y install pip
