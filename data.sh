@@ -1,7 +1,9 @@
 #!/bin/bash
-sudo yum install git -y
-sudo yum update -y
+sudo yum install python3 -y
+sudo yum install pip -y
+git clone https://github.com/santhosh-1105/car-prediction.git
+cd car-prediction/ 
+sudo yum install requirements.txt
 sudo yum install python3-pip -y
-sudo git clone https://github.com/Cjmrp/Car-prediction.git
-pip3 install -r requirements.txt
+python3 app.py
 screen -m -d python3 app.py 
