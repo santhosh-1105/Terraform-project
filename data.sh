@@ -1,10 +1,7 @@
 #!/bin/bash
-sudo apt upgrade
-sudo apt install python3
-sudo apt update
-git clone https://github.com/santhosh-1105/car-prediction.git
-cd car-prediction
-sudo apt install flask
+sudo yum install git -y
+sudo yum update -y
+sudo yum install python3-pip -y
+sudo git clone https://github.com/Cjmrp/Car-prediction.git
 pip3 install -r requirements.txt
-python3 app.py
-screen -m -d python3 app.py
+screen -m -d python3 app.py 
