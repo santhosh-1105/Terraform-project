@@ -1,5 +1,5 @@
 resource "aws_instance" "ec2_hello" {
-ami ="ami-03cb1380eec7cc118"
+ami ="ami-09964535fc01efa5f"
 instance_type = "t2.micro"
 count = 1
 key_name = "santhosh1"
@@ -15,7 +15,7 @@ associate_public_ip_address = true
 }
 
 resource "aws_instance" "ec2_hello_2" {
-ami ="ami-03cb1380eec7cc118"
+ami ="ami-09964535fc01efa5f"
 instance_type = "t2.micro"
 count = 1
 key_name = "santhosh1"
